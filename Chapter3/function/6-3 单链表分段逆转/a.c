@@ -20,7 +20,9 @@ PtrToNode Reverse(PtrToNode first, PtrToNode last)
 
 void K_Reverse( List L, int K )
 {
+    //逆转区间[firstNode, lastNode], 而preNode->next = firstNode;
     PtrToNode node, firstNode, lastNode, preNode, nextNode;
+    //计数当前区间的结点数
     int n=0;
     //遍历结点起点
     node = L->Next;
