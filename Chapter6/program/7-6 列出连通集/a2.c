@@ -131,5 +131,7 @@ int main()
     DFSTraverse(graph);
 
     BFS(graph);
+    
+    free(graph);
     return 0;
 }
