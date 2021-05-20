@@ -118,7 +118,7 @@ void BFS(MGraph* graph)
 }
 int main()
 {
-    MGraph *graph = (MGraph*)malloc(sizeof(MGraph));
+    MGraph *graph = (MGraph*)calloc(1, sizeof(MGraph));
     int i, j, v1, v2;
     scanf("%d%d", &graph->N, &graph->E);
     for(i=0; i<graph->E; ++i)
